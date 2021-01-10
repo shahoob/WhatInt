@@ -1,4 +1,4 @@
-# `WhatInt`
+# `WhatInt` ![GitHub release (latest by date)](https://img.shields.io/github/v/release/shahoob/WhatInt?label=%20&logo=python&logoColor=white&style=flat-square)
 Another "guess a number" game.
 
 ## Installation
