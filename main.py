@@ -1,4 +1,4 @@
-from random import randint, seed
+from random import randint
 import click
 
 @click.command()
