@@ -21,7 +21,7 @@ Options:
 ```
 
 What the game looks like:
-```bash
+```
 what integer: 3
 too far away
 what integer: 1
@@ -33,4 +33,9 @@ you have used these integers:
 3
 1
 2
+```
+To stop the game:
+```
+what integer: stop
+you have canceled the game
 ```
