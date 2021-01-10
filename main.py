@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, seed
 import click
 
 @click.command()
@@ -11,7 +11,9 @@ def game(min, max):
     triedInts: list[int] = []
 
     while not done:
-        chosenInt: int = int(input('what integer: '))
+        chosenIn: str = input('what integer: ')
+        if chosenIn == 'stop': break
+        chosenInt: int = int(chosenIn)
         tries += 1
         triedInts.append(chosenInt)
         if chosenInt < answer:
@@ -21,6 +23,10 @@ def game(min, max):
         elif chosenInt == answer:
             print('yes')
             done = True
+
+    if not done:
+        print('you have canceled the game')
+        return
 
     print(f'you toke {tries} tries to get {answer}.')
     if tries == 1:
